@@ -9,18 +9,18 @@ const Label = ({ children }) => (
 <span className="block text-xs font-medium uppercase tracking-widest text-gray-400 mb-1.5">{children}</span>
 );
 
-const Input = ({ type = “text”, placeholder, value, onChange, readOnly, className = “” }) => (
-<input type={type} placeholder={placeholder} value={value ?? “”} onChange={onChange} readOnly={readOnly}
+const Input = ({ type = "text", placeholder, value, onChange, readOnly, className = "" }) => (
+<input type={type} placeholder={placeholder} value={value ?? ""} onChange={onChange} readOnly={readOnly}
 className={`w-full h-11 px-3.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-900 placeholder:text-gray-300 transition-all outline-none focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 read-only:bg-gray-50 read-only:text-emerald-700 read-only:font-mono read-only:text-xs ${className}`} />
 );
 
-const InlineInput = ({ type = “number”, placeholder = “0”, value, onChange, className = “” }) => (
-<input type={type} placeholder={placeholder} value={value ?? “”} onChange={onChange}
+const InlineInput = ({ type = "number", placeholder = "0", value, onChange, className = "" }) => (
+<input type={type} placeholder={placeholder} value={value ?? ""} onChange={onChange}
 className={`w-full h-9 px-3 bg-gray-50 border border-gray-100 rounded-lg text-sm text-gray-900 outline-none focus:bg-white focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 transition-all ${className}`} />
 );
 
-const Sel = ({ value, onChange, children, className = “” }) => (
-<select value={value ?? “”} onChange={onChange}
+const Sel = ({ value, onChange, children, className = "" }) => (
+<select value={value ?? ""} onChange={onChange}
 className={`w-full h-11 px-3.5 bg-white border border-gray-200 rounded-lg text-sm text-gray-900 transition-all outline-none appearance-none cursor-pointer focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 ${className}`}>
 {children}
 </select>
